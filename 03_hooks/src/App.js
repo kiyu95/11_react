@@ -7,6 +7,16 @@ import { Container } from "./01_useEffect/05_useEffect-cleanup-example";
 import QuizShow from "./01_useEffect/99_quizShow";
 import UseReducerBasic, { Counter } from "./02_useReducer/01_reducer-basic";
 import ReducerFormControl from "./02_useReducer/02_reducer-form-control";
+import HardCalculator from "./03_useMemo/01_hard-calculator";
+import ComplexCalculator from "./03_useMemo/02_complex-calculator";
+import UseMeomoComponent from "./03_useMemo/03_performance-optimization";
+import LocationComponent from "./03_useMemo/04_object-type-problem";
+import CallBackProblem from "./04_useCallBack/01_problem";
+import FunctionMemorization from "./04_useCallBack/02_function-memorization";
+import CallBackComponent from "./04_useCallBack/03_composited-component";
+import CounterRef from "./05_useRef/01_problem";
+import UseRefCounter from "./05_useRef/02_resolve-as-useRef";
+import LoginComponent from "./05_useRef/03_inputRef";
 
 function App() {
 
@@ -22,7 +32,17 @@ function App() {
       {/* <QuizShow/> */}
       {/* <Counter/> */}
       {/* <UseReducerBasic/> */}
-      <ReducerFormControl/>
+      {/* <ReducerFormControl/> */}
+      {/* <HardCalculator/> */}
+      {/* <ComplexCalculator/> */}
+      {/* <UseMeomoComponent/> */}
+      {/* <LocationComponent/> */}
+      {/* <CallBackProblem/> */}
+      {/* <FunctionMemorization/> */}
+      {/* <CallBackComponent/> */}
+      {/* <CounterRef/> */}
+      {/* <UseRefCounter/> */}
+      <LoginComponent/>
     </>
   );
 }
