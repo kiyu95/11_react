@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# Hooks
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## useEffect
+<p>
+    didMount && didUpdate와 동일한 라이프 사이클을 갖는 훅스이다. </br>
+    해당 컴포넌트는 랜더링 이후 시점에 호출되며 보통 리소스를 할당하거나 </br>
+    외부 api를 호출할 때 많이 사용한다.
+</p>
 
-## Available Scripts
+## useReducer
+<p>
+    컴포넌트 외부에서 상태 관리를 할 수 있는 훅이다. </br>
+    첫 번째 매개변수로 state와 action을 받는다. </br>
+    리듀서는 할당된 state의 value를 컴포넌트의 state에 넣어주고 dispatch에 전달받은 외부 함수에 선언된 state를 reducer의 첫 번쨰 매개변수로 전달하여
+    action의 상태에 따라 동작을 하는 기능을 제공한다.
+</p>
 
-In the project directory, you can run:
+## useMemo
+<p>
+    리액트에서 컴포넌트의 성능을 최적화 하는데 사용되는 훅이다. </br>
+    memo는 memoization을 뜻하며, 메모이제이션(memoization)은 컴퓨터 프로그램이 동일한 계산을 반복해야 할 때, 이전에 계산한 값을 메모리에 저장함으로써 동일한 계산의 반복 수행을 제거하여 프로그램 실행 속도를 빠르게 하는 기술이다.
+</p>
 
-### `npm start`
+## useCallBack
+<p>
+    useCallback은 의존성 배열에 값이 변하지 않는 경우 마운트 시점의 함수 내부 상태를 스냅샷하여
+    useMemo와 같이 메모이제이션을 통해 해당 시점의 함수를 재사용 할 때 사용하는 훅이다.
+</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## useRef
+<p>
+    저장공간 또는 DOM요소에 접근하기 위해 사용되는 훅이다. </br>
+    useRef는 .current 프로퍼티로 전달된 인자로 변경 가능한 ref객체를 반환한다. 반환된 객체는 컴포넌트의 전 생애주기를 통해 유지된다.
+</p>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## useContext
+<p>
+    props를 통해 전달할 필요가 없이 context를 이용해 컴포넌트 트리 내에서 전역적으로 데이터를 공유할 수 있도록 해주는 훅이다.</br>
+    그러나 context를 사용하면 컴포넌트를 재사용하기 어려워지기 때문에 꼭 필요할 때만 써야한다. 
+</p>
