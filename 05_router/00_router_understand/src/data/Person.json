@@ -1,0 +1,29 @@
+[
+    {
+        "postCode" : 1,
+        "postName" : "벤치프레스",
+        "categoryName" : "3대운동",
+        "detail" : {
+            "description" : "벤치프레스",
+            "image" : "/images/1.PNG"
+        }
+    },
+    {
+        "postCode" : 2,
+        "postName" : "스쿼트",
+        "categoryName" : "3대운동",
+        "detail" : {
+            "description" : "스쿼트",
+            "image" : "/images/2.PNG"
+        }
+    },
+    {
+        "postCode" : 3,
+        "postName" : "데드리프트",
+        "categoryName" : "3대운동",
+        "detail" : {
+            "description" : "데드리프트",
+            "image" : "/images/3.PNG"
+        }
+    }
+]
