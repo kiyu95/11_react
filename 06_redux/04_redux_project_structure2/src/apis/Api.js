@@ -1,8 +1,10 @@
+import axios from "axios";
+
 const DOMAIN = "http://localhost:4000";
 
 export const request  = async (method, url, data) => {
 
-    return await axios({
+    return await axios({ // npm i axios
         method,
         url: `${DOMAIN}${url}`,
         data
